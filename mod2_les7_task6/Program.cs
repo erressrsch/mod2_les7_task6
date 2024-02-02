@@ -7,7 +7,12 @@
             Console.WriteLine("Enter your height: ");
             int height = int.Parse(Console.ReadLine());
 
-            if (height >= 140 && height < 165)
+            if (height >= 0 && height < 140)
+            {
+                Console.WriteLine("You are too small to use keyboard");
+            }
+
+                if (height >= 140 && height < 165)
             {
                 Console.WriteLine("You are halfling");
             }
